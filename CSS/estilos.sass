@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap')
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+
+.header
+    width: 100%
+    height: 500px
+    position: relative
+    font-family: raleway
+    margin-bottom: 30px
+    min-height: 500px
+    .container__right
+        img
+            object-fit: cover
+            width: 100%
+            height: 100%
+        .nav
+            label i
+                position: fixed
+                color: #f1f1f1
+                font-size: 12pt
+                top: 10px
+                right: 10px
+                border: 1px solid #f1f1f1
+                padding: 10px
+
+            .nav__item
+                position: fixed
+                left: 100%
+                transition: 0.5s ease
+                .nav_links
+                    padding: 10px 15px
+                    list-style: none
+                    .nav__linkitem
+                        text-decoration: none
+                        color: #f1f1f1
+            .nav__item.active
+                top: 50px
+                left: 0%
+                background: #222222
+                z-index: 9
+                height: 100vh
+                width: 100%
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+       
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        background: #222222
+        width: 90%
+        margin: -80px auto 80px auto
+        padding: 15px 0px 15px 10px
+        z-index: 5
+        position: inherit
+        border-radius: 15px
+
+        img
+            width: 60px
+            height: 100px
+        .container__title
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            h1
+                color: #f1f1f1
+                font-size: 22pt
+                font-style: italic
+                text-align: right
+            hr
+                border: 1px solid #02A0C7
+                width: 60%
+                float: right
+                margin: 10px
+            p
+                margin: 20px 0
+                color: #f1f1f1
+                font-style: normal
+                text-align: right
+
+            a
+                padding: 10px 15px
+                text-decoration: none
+                color: #f1f1f1
+                background: #02A0C7
+                border-radius: 10px
+                text-align: right
+                transition: 0.5s ease
+                &:hover
+                    background: #0284A5
+
+.section
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    font-family: 'roboto',sans-serif
+    margin: 50px auto
+    padding: 0px 15px
+    max-width: 1920px
+    h2
+        width: 100%
+        margin: 20px 0
+        text-align: center
+        color: #0d0d0d
+        font-size: 22pt
+
+    .article__box
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+        gap: 20px
+        max-width: 350px
+        margin: 20px auto 20px auto
+        img
+            border-radius: 125px
+            width: 200px
+            height: 200px
+        h3
+            letter-spacing: 1px
+            text-align: center
+            font-size: 16pt
+
+        p
+            text-align: justify
+            font-weight: normal
+            font-size: 12pt
+.adoption
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    text-align: center
+    font-family: 'roboto',sans-serif
+    background: #282828
+    margin: 20px 0
+    h2
+        margin: 20px 0
+        text-align: center
+        color: #f1f1f1
+        font-size: 22pt
+        width: 100%
+    .adoption__mascot
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 400px
+        max-width: 350px
+        margin-bottom: 20px
+        .adoption__image
+            height: 200px
+            position: relative
+            overflow: hidden
+
+            img
+                border-radius: 125px
+                width: 200px
+                height: 200px
+                transition: 0.5 ease
+                overflow: hidden
+                transition: 0.5s ease
+            a
+                position: absolute
+                left: 12%
+                bottom: 0
+                right: 0
+                top: 0
+                padding: 5px 15px
+                height: 35px
+                width: 150px
+                top: 500px
+                text-decoration: none
+                color: #f1f1f1
+                background: #02a0c7cb
+                border-radius: 10px
+                text-align: center
+                transition: 0.5s ease
+                font-weight: 700
+
+            &:hover a
+                top: 40%
+            &:hover img
+                overflow: hidden
+                filter: opacity(40%)
+        span
+            margin: 20px 0
+            padding: 10px 20px
+            font-weight: 600
+            background: #02a0c7
+            color: #f1f1f1
+            border-radius: 10px
+.map
+    margin: 40px 0 20px 0
+    iframe
+        width: 100%
+        height: 600px
+        border: none
+
+.map-direction
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    padding: 10px 15px
+    font-family: roboto,'sans-serif'
+    span,i
+        color: #0D0D0D
+        font-size: 12pt
+    span
+        font-weight: bold
+        padding-left: 10px
+
+.footer
+    font-family: roboto,'sans-serif'
+    background: #282828
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    padding: 0 15px
+    margin-top: 20px
+    .footer__column1
+        width: 100%
+        max-width: 360px
+        h2
+            text-align: center
+            color: #f1f1f1
+            font-size: 22pt
+            margin: 20px
+        p
+            text-align: justify
+            color: #f1f1f1
+            letter-spacing: 1px
+            font-weight: normal
+            font-size: 12pt
+    .footer__column2
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        width: 100%
+        max-width: 360px
+        h2
+            text-align: center
+            color: #f1f1f1
+            font-size: 22pt
+            margin: 20px
+        .menu
+            display: flex
+            flex-direction: column
+            gap: 5px
+        a
+            display: flex
+            align-items: center
+            text-decoration: none
+            color: #f1f1f1
+            padding-right: 5px
+            transition: .5s ease
+            &:hover
+                color: #8C8C8C
+    .footer__column3
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        flex-wrap: wrap
+        margin-bottom: 20px
+        width: 100%
+        max-width: 360px 
+        
+        
+        
+        0px
+        h2
+            text-align: center
+            color: #f1f1f1
+            font-size: 22pt
+            margin: 20px
+        .menu
+            display: flex
+            flex-direction: column
+            gap: 5px
+        a
+            display: flex
+            align-items: center
+            text-decoration: none
+            column-gap: 5px
+            color: #f1f1f1
+            width: 140px
+            transition: .5s ease
+            &:hover
+                color: #8C8C8C
+            img
+                border: 1px solid #f1f1f1
+                border-radius: 15px
+                padding: 5px
+.footer__pie
+    font-family: roboto,'sans-serif'
+    background: #03426B
+    padding: 10px 0
+    width: 100%
+    text-align: center
+    color: #f1f1f1
+
+.icon
+    position: fixed
+    bottom: 10px
+    right: 0px
+    width: 30px
+    height: 30px
+    padding-top: 2px
+    padding-left:
+    &:hover
+        background-color: #02A0C7
+        // color: #f1f1f1
+    img
+        //   border-radius: 40px
+
+@media(min-width: 360px)
+    .header
+        .container
+            padding-right: 5px 
+            img
+                margin-left: -25px
+                width: 120px
+                height: 140px
+
+@media(min-width: 720px)
+    .header
+        height: 60vh
+        display: flex
+        flex-direction: row-reverse
+        .container
+            border-radius: 0
+            justify-content: space-around
+            width: 40%
+            height: 100%
+            margin:  0
+            img
+                margin-left: 0
+
+    .adoption
+        justify-content: space-evenly
+
+@media(min-width: 1024px)
+    .header
+        position: inherit
+        display: flex
+        justify-content: space-between
+        .container__right
+            width: 70%
+            .nav
+                #btnmenu
+                    display: none
+                .nav__item
+                    position: absolute
+                    top: 10px
+                    left: 10px
+                    right: 0
+                    bottom: 0
+                    display: flex
+                    justify-content: flex-end
+                    align-items: flex-start
+                    height: 40px
+                    .nav_links
+                        transition: 0.5s ease
+                    .nav_links:hover
+                        background: #f1F1F1
+                    .nav_links:hover .nav__linkitem
+                        color: #0D0D0D
+                        
+        .container
+            justify-content: space-around
+            margin: 0
+            padding-right: 10px
+            img
+                width: 180px
+                height: 180px
+            .container__title
+                h1
+                    font-size: 28pt
+                p
+                    font-size: 16pt
+                a
+                    font-size: 16pt
